@@ -1,0 +1,36 @@
+server:
+  compression:
+    enabled: true
+  # Default port
+  port: 8080
+  # Enable graceful shutdown - Server will wait for active request to finish
+  shutdown: graceful
+  tomcat:
+    mbeanregistry:
+      enabled: true
+# Spring Configuration
+spring:
+  application:
+    name: mariadb-testcontainers
+# Swagger
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+# Kafka Configuration
+kafka:
+  config:
+    bootstrap-server: localhost:9092
+    max-block-ms: 5000
+    max-request-size: 10485880
+    retry: 3
+    buffer-memory: 10485880
+    batch-size: 100000
+    linger-ms: 10
+    metadata-max-age: 500
+    acks: 1
+    krb5-conf: dummy
+    krb5-debug: dummy
+    login-conf: dummy
+    security-protocol: PLAINTEXT
