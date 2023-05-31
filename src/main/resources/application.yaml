@@ -11,7 +11,7 @@ server:
 # Spring Configuration
 spring:
   application:
-    name: mariadb-testcontainers
+    name: kafka-testcontainers
 # Swagger
 springdoc:
   api-docs:
